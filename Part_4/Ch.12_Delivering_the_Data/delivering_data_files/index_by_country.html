@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+
+<style>
+  body {
+    font-family: sans-serif;
+  }
+</style>
+
+<h2 id="data-title"></h2>
+
+<div id="data">
+  <pre></pre>
+</div>
+
+<script src="lib/d3.v7.min.js"></script>
+<script>
+  let loadCountryWinnersJSON = function (country) {
+    d3.json("data/winners_by_country/" + country + ".json")
+      .then(function (data) {
+        d3.select("h2#data-title").text(
+          "All the Nobel-winners from " + country
+        );
+        d3.select("div#data pre").html(JSON.stringify(data, null, 4));
+      })
+      .catch((error) => console.log(error));
+  };
+
+  loadCountryWinnersJSON("Australia");
+</script>

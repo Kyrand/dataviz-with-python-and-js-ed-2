@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<!-- A few CSS style rules -->
+<style>
+  svg#chart {
+    background: lightgray;
+  }
+  #chart {
+    background: #eee;
+    font-family: sans-serif;
+  }
+  #chart text {
+    font-size: 16px;
+  }
+  #chart text#title {
+    font-size: 18px;
+  }
+  #chart circle {
+    fill: lightblue;
+  }
+  #chart line {
+    stroke: #555555;
+    stroke-width: 2;
+  }
+  #chart rect {
+    stroke: red;
+    fill: white;
+  }
+  #chart polygon {
+    fill: green;
+  }
+  #chart text {
+    font-size: 16px;
+  }
+  #chart text#title {
+    font-size: 18px;
+  }
+  #chart path {
+    stroke: red;
+    fill: none;
+  }
+</style>
+<svg id="chart" width="300" height="225">
+  <circle r="15" cx="100" cy="50"></circle>
+  <line x1="20" y1="20" x2="20" y2="130"></line>
+  <line x1="20" y1="130" x2="280" y2="130"></line>
+  <rect x="240" y="5" width="55" height="30"></rect>
+  <polygon points="210,100, 230,100, 220,80"></polygon>
+  <text id="title" text-anchor="middle" x="150" y="20">A Dummy Chart</text>
+  <text
+    x="20"
+    y="20"
+    transform="rotate(-90,20,20)"
+    text-anchor="end"
+    dy="0.71em"
+  >
+    y axis label
+  </text>
+  <path d="M20 130L60 70L110 100L160 45"></path>
+</svg>
+<!-- Third-party libraries and our JS script. -->
+<script src="http://d3js.org/d3.v7.min.js"></script>
+<script src="script.js"></script>

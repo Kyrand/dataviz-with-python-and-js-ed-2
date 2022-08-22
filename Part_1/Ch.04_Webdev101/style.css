@@ -1,0 +1,130 @@
+#intro{
+    padding:5px;
+    border:1px solid #333;
+    background:peachpuff;
+    margin-bottom:10px;
+}
+
+.dev{
+    border:1px solid red;
+}
+
+.dev div{
+    border: 1px solid green;
+}
+
+.dev svg{
+    border: 1px solid blue;
+}
+
+#composer{
+    padding:20px;
+    width:820px;
+    height:820px;
+    margin:auto;
+    }
+
+#chart{
+    width:100%;
+    height:100%;
+}
+
+
+body{
+    background:#ccc;
+}
+
+div#chart svg{
+    background: #eee;
+    width: 100px;
+    height: 100px;
+}
+
+div.dev{
+    border: solid 1px red;
+}
+
+div.dev div{
+    border: dashed 1px green;
+}
+
+div#chart-holder{
+    width:800px;
+    height:600px;
+    background:white;
+    margin:auto;
+    position:relative;
+    font-size:28px;
+}
+
+div#chart-components{
+    height:600px;
+}
+
+div#header{
+    height:20%;
+}
+
+div#main{
+    width:75%;
+    height:80%;
+    background:#eee;
+    display:inline-block;
+}
+
+div#sidebar{
+    width:25%;
+    height:80%;
+    display:inline-block;
+}
+
+body{
+    background:#ccc;
+    font-family: Sans-serif;
+}
+
+div#chart svg{
+    background: #eee;
+    width: 100px;
+    height: 100px;
+}
+
+div.dev{
+    border: solid 1px red;
+}
+
+div.dev div{
+    border: dashed 1px green;
+}
+
+div#chart-holder{
+    width:600px;
+    <!-- height:600px; -->
+    background:white;
+    margin:auto;
+    font-size:16px;
+}
+
+div#chart-components{
+    height:400px;
+    position:relative;
+}
+
+<!-- div#header{ -->
+                 <!-- height:20%; -->
+                 <!-- } -->
+div#main, div#sidebar{
+    position:absolute;
+}
+
+div#main{
+    width:75%;
+    height:100%;
+    background:#eee;
+}
+
+div#sidebar{
+    right:0;
+    width:25%;
+    height:100%;
+}

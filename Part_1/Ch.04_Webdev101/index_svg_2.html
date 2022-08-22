@@ -1,0 +1,77 @@
+<style>
+  body {
+    font-family: sans-serif;
+  }
+  #chart path {stroke: red; fill: none}
+</style>
+
+<div class="sections">
+  <div class="curves">
+    <h2>SVG Curves</h2>
+<svg id="chart" width="300" height="150">
+  <path d="M40 40
+  A30 40
+  0 0 1
+  80 80
+  A50 50 0 0 1 160 80
+  A30 30 0 0 1 190 80
+ " />
+ </svg>
+
+ <svg id="chart" width="300" height="150">
+  <path d="M40 80
+  A30 40 0 0 1 80 80
+  A30 40 0 0 0 120 80
+  A30 40 0 1 0 160 80
+  A30 40 0 1 1 200 80
+ ">
+ </svg>
+</div>
+<div class="transforms">
+  <h2>Scaling and Rotating</h2>
+  <svg id="chart" width="300" height="150">
+    <rect width="20" height="40" transform="translate(60, 55)"
+    fill="blue"/>
+    <rect width="20" height="40" transform="translate(120, 55),
+    rotate(45)" fill="blue"/>
+    <rect width="20" height="40" transform="translate(180, 55),
+    scale(0.5)" fill="blue"/>
+    <rect width="20" height="40" transform="translate(240, 55),
+    rotate(45),scale(0.5)" fill="blue"/>
+   </svg>
+</div>
+<div class="groups">
+  <h2>Working with Groups</h2>
+  <svg id="chart-groups" width="300" height="150">
+    <g id="shapes" transform="translate(150,75)">
+    <circle cx="50" cy="0" r="25" fill="red" />
+    <rect x="30" y="10" width="40" height="20" fill="blue" />
+    <path d="M-20 -10L50 -10L10 60Z" fill="green" />
+    <circle r="10" fill="yellow">
+    </g>
+   </svg>
+
+  <svg id="chart-groups" width="300" height="150">
+    <g id="shapes" transform = "translate(150,75),scale(0.5),rotate(90)">
+    <circle cx="50" cy="0" r="25" fill="red" />
+    <rect x="30" y="10" width="40" height="20" fill="blue" />
+    <path d="M-20 -10L50 -10L10 60Z" fill="green" />
+    <circle r="10" fill="yellow">
+    </g>
+   </svg>
+
+</div>
+<div class="layering">
+  <style>
+    #chart-layers circle { opacity: 0.33 }
+   </style>
+   <h2>Layers and Transparency</h2>
+   <svg id="chart-layers" width="300" height="150">
+    <g transform="translate(150, 75)">
+    <circle cx="0" cy="-20" r="30" fill="red"/>
+    <circle cx="17.3" cy="10" r="30" fill="green"/>
+    <circle cx="-17.3" cy="10" r="30" fill="blue"/>
+    </g>
+   </svg>
+</div>
+</div>

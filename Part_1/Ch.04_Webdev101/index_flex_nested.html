@@ -1,0 +1,50 @@
+<div class="main-container">
+  <div class="container" id="top-container">
+    <div class="box" id="box1">box 1</div>
+    <div class="box" id="box2">box 2</div>
+  </div>
+  <div class="container" id="middle-container">
+    <div class="box" id="box3">box 3</div>
+  </div>
+  <div class="container" id="bottom-container">
+    <div class="box" id="box4">box 4</div>
+    <div class="box" id="box5">
+      <div class="box" id="box6">box 6</div>
+      <div class="box" id="box7">box 7</div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .main-container {
+    height: 800px;
+    padding: 10px;
+    border: 2px solid green;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    flex: 1;
+    display: flex;
+  }
+  .box {
+    flex: 1;
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 30px;
+  }
+  #middle-container {
+    justify-content: center;
+  }
+  #box3 {
+    width: 66%;
+    flex: initial;
+  }
+  #bottom-container {
+    flex: 2;
+  }
+  #box5 {
+    display: flex;
+    flex-direction: column;
+  }
+</style>

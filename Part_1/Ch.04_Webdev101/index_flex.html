@@ -1,0 +1,41 @@
+<div class="container" id="top-container">
+  <div class="box" id="box1">box 1</div>
+  <div class="box" id="box2">box 2</div>
+  <div class="box" id="box3">box 3</div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    border: 2px solid red;
+    /* a column of content, over-riding row default: */
+    /* flex-direction: column; */
+    /* content from bottom to top: */
+    /* flex-direction: column-reverse;  */
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* The following centers the content: */
+    /* gap: 20px;
+    justify-content: center;
+    align-items: center; */
+  }
+
+  .box {
+    border: 2px solid green;
+    font-size: 28px;
+    padding: 10px;
+    /* comment out the following width+height properties to make boxes fully flexible: */
+    width: 80px;
+    height: 80px;
+    /* make the boxes expand to fit: */
+    /* flex: 1; */
+  }
+
+  #box1 {
+    /* double the weight of box-1: */
+    /* flex: 2; */
+  }
+</style>
