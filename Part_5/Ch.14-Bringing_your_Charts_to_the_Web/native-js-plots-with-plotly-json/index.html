@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="styles/index.css" />
+
+<div class="main">
+  <h1 class="title">The Nobel Prize</h1>
+  <h2>From notebook to the web with Plotly</h2>
+
+  <div class="intro">
+    <p>
+      Some nuggets of data mined from a dataset of Nobel prize winners (2016).
+    </p>
+  </div>
+
+  <div class="container" id="by-country-container">
+    <div class="info-box">
+      <p>
+        This chart shows the large discrepancy between total male and female
+        Nobel prize-winners by prize category.
+      </p>
+      <p>
+        Not all categories are equally unequal, with Economics being almost
+        totally a male affair while Literature and Peace are considerably
+        closer. Within the sciences females fair better in Physiology or
+        Medicine than in Physics or Chemistry.
+      </p>
+    </div>
+
+    <div class="chart-wrapper" id="by-country">
+      <div class="chart" id="gender-category"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.2/d3.min.js"></script>
+<script src="scripts/index.js"></script>

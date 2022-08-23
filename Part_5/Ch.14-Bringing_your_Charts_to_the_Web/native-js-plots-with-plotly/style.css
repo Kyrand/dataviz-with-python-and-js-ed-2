@@ -1,0 +1,63 @@
+html,
+body {
+  height: 100%;
+  font-family: Georgia, serif;
+  background: #fff1e5;
+  font-size: 1.2em;
+}
+
+h1.title {
+  font-size: 2.1em;
+}
+
+.main {
+  padding: 10px;
+  padding-bottom: 100px;
+  min-width: 800px;
+  max-width: 1200px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /*   align-items: stretch; */
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex: 2;
+  min-height: 400px;
+}
+
+.chart {
+  flex: 1;
+  padding: 0 1.5em;
+}
+
+.chart img {
+  /*   height: 100%; */
+}
+
+.info-box {
+  font-family: sans-serif;
+  flex: 1;
+  /*   font-size: 2.7vw; */
+  font-size: 0.7em;
+  padding: 0 1.5em;
+  background: #ffebd9;
+
+  /*   min-width: 300px; */
+}
+
+#by-country img {
+  max-height: 600px;
+}
+
+/* When the browser is at least 600px and above */
+@media screen and (max-width: 1000px) {
+  #by-country-container {
+    flex-direction: column-reverse;
+    /* Apply some styles */
+  }
+}

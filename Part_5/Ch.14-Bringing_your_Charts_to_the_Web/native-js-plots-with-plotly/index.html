@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Native JS plots with Plotly</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="main">
+  <h1 class='title'>The Nobel Prize</h1>
+  <h2>Native JS plotting with Plotly</h2>
+
+  <div class="intro">
+    <p>Some nuggets of data mined from a dataset of Nobel prize winners (2016).</p>
+  </div>
+
+  <div class="container" id="by-country-container">
+
+    <div class="info-box">
+      <p>This violin-plot shows the age distribution by sex for Nobel prize-winners.</p>
+      <p>Note the broader age-range for female winners and the earlier peak age (55) compared with males (61)</p>
+    </div>
+
+    <div class="chart-wrapper">
+      <div class='chart' id='award_age'></div>
+  </div>
+</div>
+
+<script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

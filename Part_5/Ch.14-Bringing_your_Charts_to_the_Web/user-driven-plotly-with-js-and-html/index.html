@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="styles/index.css">
+
+<div class="main">
+  <h1 class='title'>The Nobel Prize</h1>
+  <h2>From notebook to the web with Plotly</h2>
+
+  <div class="intro">
+    <p>Some nuggets of data mined from a dataset of Nobel prize winners (2016).</p>
+  </div>
+
+  <div class="container" id="by-country-container">
+
+    <div class="info-box">
+      <p> These violin plots show the distribution of award ages for gender and category groups. You can use the group selector to choose which gets charted.</p>
+      <p> Note that women tend to be awarded prizes earlier than men (peaks at 55 vs 62). Prizes for science tend to be awarded earlier than those for economics, literature or peace. </p>
+    </div>
+
+    <div class="chart-wrapper" id="by-country">
+      <div class='chart' id='violin-group'> </div>
+    </div>
+  </div>
+
+  <div id="chart-ui">
+
+<!--     <div id="category-buttons">
+      <label for="category-buttons">Category:</label>
+
+      <div id="category-buttons-holder">
+
+      </div>
+    </div> -->
+
+    <div id="nobel-group-select-holder">
+      <label for="nobel-group">Group:</label>
+      <select name="nobel-group" id="nobel-group"></select>
+    </div>
+
+<!--     <div id="science-filter">
+      <label for="science-filter-radio">Focus on sciences:</label>
+      <input type="checkbox" />
+    </div> -->
+
+  </div>
+
+</div>
+
+<script src="https://cdn.plot.ly/plotly-2.9.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.4.2/d3.min.js"></script>
+<script src="scripts/index.js"> </script>

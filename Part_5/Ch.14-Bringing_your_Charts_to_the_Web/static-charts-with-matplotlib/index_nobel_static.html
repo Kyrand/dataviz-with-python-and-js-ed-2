@@ -1,0 +1,85 @@
+<!-- index.html -->
+<div class="main">
+  <h1 class="title">The Nobel Prize</h1>
+  <h2>A few exploratory nuggets</h2>
+  <div class="intro">
+    <p>
+      Some nuggets of data mined from a dataset of Nobel prize winners (2016).
+    </p>
+  </div>
+  <div class="container" id="by-country-container">
+    <div class="info-box">
+      <p>
+        These two charts compare Nobel prize winners by country. The absolute
+        numbers are compared to the per-capita measure which takes into account
+        the population size of the respective countries.
+      </p>
+      <p>
+        Low winning outliers with less than two prizes are removed from the
+        relative set.
+      </p>
+      <p>
+        While the absolute prize tally shows the expected dominance of the
+        United States and historically influential countries, by adjusting for
+        population size we see a very different, arguably fairer selection of
+        achievements. Scandinavian countries do very well, as does Switzerland,
+        a favorite of Nobel prize winning emigres. One caveat is that Sweden,
+        winner by a relative metric, hosts the prize.
+      </p>
+    </div>
+    <div class="chart-wrapper" id="by-country">
+      <div class="chart">
+        <img src="images/country_absolute_prize_numbers.png" alt="" />
+      </div>
+      <div class="chart">
+        <img src="images/country_relative_prize_numbers.png" alt="" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  html,
+  body {
+    height: 100%;
+    font-family: Georgia, serif;
+    background: #fff1e5;
+    font-size: 1.2em;
+  }
+  h1.title {
+    font-size: 2.1em;
+  }
+  .main {
+    padding: 10px;
+    padding-bottom: 100px;
+    min-width: 800px;
+    max-width: 1200px;
+  }
+  .container {
+    display: flex;
+  }
+  .chart-wrapper {
+    display: flex;
+    flex: 2;
+  }
+  .chart {
+    flex: 1;
+    padding: 0 1.5em;
+  }
+  .chart img {
+    max-height: 600px;
+  }
+  .info-box {
+    font-family: sans-serif;
+    flex: 1;
+    font-size: 0.7em;
+    padding: 0 1.5em;
+    background: #ffebd9;
+  }
+  /* When the browser is 1000px wide or less */
+  @media screen and (max-width: 1000px) {
+    #by-country-container {
+      flex-direction: column-reverse;
+    }
+  }
+</style>
