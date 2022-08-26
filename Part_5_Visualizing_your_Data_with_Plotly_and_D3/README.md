@@ -1,5 +1,7 @@
 # Visualizing your Data with Plotly and D3
 
+![Nobel Dataviz](./Nobel_dataviz.png)
+
 In the first chapter of this part we see how to take the fruits of your Pandas driven
 exploration, in the form of charts or maps, and put them on the web, where they
 belong. Matplotlib can produce publication standard static charts while Plotly brings
