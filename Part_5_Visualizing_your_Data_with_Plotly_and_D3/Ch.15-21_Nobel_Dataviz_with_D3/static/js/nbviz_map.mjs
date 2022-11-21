@@ -119,20 +119,14 @@ let updateMap = function (countryData) {
       };
     }));
 
-  let maxWinners = d3.max(
-    mapData.map(function (d) {
-      return d.number;
-    })
-  );
+  let maxWinners = d3.max(mapData.map((d) => d.number));
   // DOMAIN OF VALUE-INDINCATOR SCALE
   radiusScale.domain([0, maxWinners]);
 
   let countries = svg
     .select(".countries")
     .selectAll(".country")
-    .data(mapData, function (d) {
-      return d.name;
-    });
+    .data(mapData, (d) => d.name);
 
   countries
     .join(
@@ -140,10 +134,8 @@ let updateMap = function (countryData) {
         return enter
           .append("path")
           .attr("class", "country")
-          .attr("name", function (d) {
-            return d.name;
-          })
-          .on("mouseenter", function (event, d) {
+          .attr("name", (d) => d.name)
+          .on("mouseenter", function (event) {
             // console.log('Entered ' + d.name);
             let country = d3.select(this);
             if (!country.classed("visible")) {
@@ -195,9 +187,7 @@ let updateMap = function (countryData) {
   let centroids = svg
     .select(".centroids")
     .selectAll(".centroid")
-    .data(mapData, function (d) {
-      return d.name;
-    });
+    .data(mapData, (d) => d.name);
 
   centroids
     .join(

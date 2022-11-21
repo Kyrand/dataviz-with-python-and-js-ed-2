@@ -65,9 +65,7 @@ catLabels
 
 catLabels
   .append("text")
-  .text(function (d) {
-    return d;
-  })
+  .text((d) => d)
   .attr("dy", "0.4em")
   .attr("x", 10);
 
